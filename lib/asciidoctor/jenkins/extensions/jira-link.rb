@@ -23,7 +23,7 @@ Asciidoctor::Extensions.register do
         label = issueId
       end
 
-      target = %(https://issues.jenkins.io/browse/#{issueId})
+      target = %(https://issue-redirect.jenkins.io/#{issueId})
       (create_anchor parent, label, type: :link, target: target).render
     end
   end
